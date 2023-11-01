@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedVida - Iniciar sesión</title>
+    
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+  <!-- icon -->
+  <link href="assets/img/hospital.png" rel="icon">
+  <link href="assets/img/hospital.png" rel="apple-touch-icon">
+
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" action="auth.php" method="post">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Usuario" name="nombre" required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Contraseña" name="contrasena" required>
+                    </div>
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">Iniciar sesión</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+    <!-- Bloquea la acción de retroceso del navegador -->
+    <script type="text/javascript">
+        window.history.pushState(null, document.title, location.href);
+        window.addEventListener('popstate', function (event){
+            window.history.pushState(null, document.title, location.href);
+        });
+    </script>
+</body>
+</html>
+
+
+
