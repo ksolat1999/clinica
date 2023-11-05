@@ -104,10 +104,6 @@
           <h2>Citas</h2>
         </div>
 
-        <!-- <div class="d-flex justify-content-center mb-3">
-          <button type="button" id="btnAgregarCitas" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarCitas">Agregar Cita</button>
-        </div> -->
-
         <div class="table-container">
           <table class="table table-striped table-responsive custom-table2 table-bordered">
             <thead>
